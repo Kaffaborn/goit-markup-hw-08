@@ -5,6 +5,15 @@
 }
 
 .header__container {
+    @extend %container;
     display: flex;
-    @extend %container
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__menu{
+    @media screen and (max-width:767px){
+        display:none;
+    }
 }

@@ -1,9 +1,11 @@
 .team-social-media {
-    display: inline-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
-    margin-bottom: 30px;
-    margin-left: 32px;
-    margin-right: 32px;
+    padding-bottom: 24px;
+    // margin-left: 32px;
+    // margin-right: 32px;
 
     @extend %list;
 }

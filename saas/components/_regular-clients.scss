@@ -1,22 +1,28 @@
 .regular-clients {
-    padding-top: 94px;
+    padding-top: 60px;
     padding-bottom: 94px;
 }
 
 .regular-clients__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     @extend %section-title;
 }
 
 .regular-clients__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 
     @extend %list;
 }
 
 .regular-clients__item:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.regular-clients__item{
+    gap:30px;
+    
+    flex-basis: calc((100% - 2*15px)/2);
 }
 
 .regular-clients__link {

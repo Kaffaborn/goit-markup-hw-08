@@ -1,17 +1,16 @@
 .team-members {
     background-color: $team-bg-color;
 
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .team-members__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     @extend %section-title
 }
 
 .team-members__list {
-    display: flex;
     @extend %list
 }
 
@@ -24,8 +23,8 @@
     border-radius: 0px 0px 4px 4px;
 
     &:not(:last-child) {
-            margin-right: 30px;
-        }
+            margin-bottom: 30px;
+         }
 }
 
 .team-members__name {
