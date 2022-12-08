@@ -1,0 +1,10 @@
+.header {
+    outline: 1px;
+    outline-style: solid;
+    outline-color: $outline;
+}
+
+.header__container {
+    display: flex;
+    @extend %container
+}

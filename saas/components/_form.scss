@@ -1,0 +1,166 @@
+.form {
+    width: 448px;
+
+    margin-top: 12px;
+}
+
+.form input,
+.form textarea {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin: 0;
+
+    outline-style: none;
+
+    font: inherit;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.form__title {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $primary-text-color;
+
+    margin-bottom: 4px;
+}
+
+.form__input {
+    height: 40px;
+    padding-left: 42px;
+
+    text-align: left;
+
+    &:focus{
+        border-color: $accent-color;
+    }
+
+    &:focus~.form__icon {
+        fill: $accent-color;
+    }
+}
+
+.form__icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+
+    fill: $title-text-color;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__comment {
+    padding-top: 12px;
+    padding-left: 16px;
+
+    width: 448px;
+    height: 120px;
+
+    resize: none;
+
+    &:focus {
+        border-color: $accent-color;
+    }
+
+    &::placeholder {
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+    
+        color: rgba(117, 117, 117, 0.5);
+    }
+}
+
+.form__checkbox-field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.form__checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    position: absolute;
+
+    &:checked+.form__checkbox-icon {
+        background-color: $accent-color;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border: none;
+        fill: $white-color;
+    }
+}
+
+.form__checkbox-icon {
+    margin-right: 8px;
+    border-radius: 2px;
+
+    border: 2px solid $title-text-color;
+
+    fill: none;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        filter 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.form__policy {
+    font-size: 14px;
+    line-height: 1.7;
+
+    color: $primary-text-color;
+}
+
+.form__policy-link {
+    color: $accent-color;
+}
+
+.form__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 30px;
+    margin-left: 124px;
+
+    width: 200px;
+    height: 50px;
+
+    border: none;
+    border-radius: 4px;
+
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+
+    color: $white-color;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+        background-color: $second-accent-color;
+    }
+}

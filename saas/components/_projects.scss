@@ -1,0 +1,98 @@
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+
+    @extend %list;
+}
+
+.projects__card {
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.projects__link {
+    display: block;
+    text-decoration: none;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    &:hover .projects__overlay {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.projects__top {
+    position: relative;
+    overflow: hidden;
+}
+
+.projects__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 294px;
+
+    background-color: $projects-overlay;
+
+    opacity: 0;
+
+    transform: translateY(100%);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projects__overlay-text {
+    position: absolute;
+    top: 63px;
+    left: 24px;
+    width: 322px;
+    height: 168px;
+
+    font-size: 18px;
+    line-height: 1.5;
+    color: $white-color;
+}
+
+.projects__bottom {
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: $outline-projects;
+
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: $outline-projects;
+
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: $outline-projects;
+
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+}
+
+.projects__name {
+    color: $title-text-color;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.projects__type {
+    color: $primary-text-color;
+    font-size: 16px;
+    line-height: 1.8;
+
+    margin-top: 4px;
+}

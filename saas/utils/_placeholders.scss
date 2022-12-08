@@ -1,0 +1,25 @@
+%list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+%btn {
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+%container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+%section-title {
+    color: $title-text-color;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+}

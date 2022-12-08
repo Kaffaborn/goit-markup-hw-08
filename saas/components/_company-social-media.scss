@@ -1,0 +1,47 @@
+.company-social-media {
+    margin-left: 70px;
+}
+
+.company-social-media__text {
+    color: $white-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+.company-social-media__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.company-social-media__list {
+    display: flex;
+    @extend %list;
+}
+
+.company-social-media__link {
+    background-color: $footer-links-bg;
+    color: $white-color;
+
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    &:hover,
+    &:focus{
+        background-color: $accent-color;
+    }
+}
+
+.company-social-media__icon {
+    fill: currentColor;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
