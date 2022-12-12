@@ -2,19 +2,25 @@
     outline: 1px;
     outline-style: solid;
     outline-color: $outline;
+
+    position: relative;
 }
 
 .header__container {
     @extend %container;
+
     display: flex;
 
-    align-items: center;
     justify-content: space-between;
-
+    align-items: center;
 }
 
-.header__menu{
-    @media screen and (max-width:767px){
-        display:none;
+.header__menu-container {
+    @media screen and (max-width:767px) {
+        display: none;
+
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }

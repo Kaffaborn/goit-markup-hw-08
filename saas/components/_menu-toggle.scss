@@ -1,0 +1,24 @@
+.menu-toggle{
+    @extend %btn;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+
+    &:hover,
+    &:focus{
+        fill: $accent-color;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    &--opened-menu{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+    }
+}
