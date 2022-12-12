@@ -3,11 +3,13 @@
     font-size: 14px;
     line-height: 1.7;
 
+    text-align: center;
+
     @extend %list
 }
 
 .address__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
 
 .address__street {

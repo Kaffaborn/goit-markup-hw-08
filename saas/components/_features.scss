@@ -20,13 +20,13 @@
     @extend %list;
 }
 
-// .features__item:not(:last-child) {
-//     margin-right: 30px;
-// }
+.features__item:not(:last-child) {
+    margin-bottom: 30px;
+}
 
 .features__background {
     background-color: $features-bg;
-    width: 450px;
+    max-width: 450px;
     height: 120px;
 
     margin-bottom: 30px;

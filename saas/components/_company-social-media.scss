@@ -1,5 +1,7 @@
 .company-social-media {
-    margin-left: 70px;
+    text-align: center;
+
+    margin-top: 60px;
 }
 
 .company-social-media__text {
@@ -9,17 +11,20 @@
     line-height: 16px;
     text-transform: uppercase;
 
-    margin-top: 12px;
     margin-bottom: 20px;
-}
-
-.company-social-media__item:not(:last-child) {
-    margin-right: 10px;
 }
 
 .company-social-media__list {
     display: flex;
+
+    align-items: center;
+    justify-content: center;
+
     @extend %list;
+}
+
+.company-social-media__item:not(:last-child) {
+    margin-right: 10px;
 }
 
 .company-social-media__link {

@@ -11,23 +11,18 @@
 .regular-clients__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    gap:30px;
 
     @extend %list;
 }
 
-.regular-clients__item:not(:last-child) {
-    margin-bottom: 30px;
-}
 .regular-clients__item{
-    gap:30px;
-    
-    flex-basis: calc((100% - 2*15px)/2);
+   width: calc((100% - 30px) / 2);
 }
 
 .regular-clients__link {
     display: flex;
-    width: 170px;
+    max-width: 210px;
     height: 92px;
     border: 1px solid $icon-main-color;
     border-radius: 4px;
