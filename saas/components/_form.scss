@@ -1,5 +1,5 @@
 .form {
-    width: 448px;
+    width: 100%;
 
     margin-top: 12px;
 }
@@ -63,7 +63,6 @@
     padding-top: 12px;
     padding-left: 16px;
 
-    width: 448px;
     height: 120px;
 
     resize: none;
@@ -138,7 +137,8 @@
     justify-content: center;
 
     margin-top: 30px;
-    margin-left: 124px;
+    margin-left: auto;
+    margin-right: auto;
 
     width: 200px;
     height: 50px;
