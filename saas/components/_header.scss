@@ -10,9 +10,8 @@
     @extend %container;
 
     display: flex;
-
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 .header__menu-container {
@@ -22,5 +21,8 @@
         position: absolute;
         top: 0;
         left: 0;
+    }
+    @media screen and (min-width:768px){
+        display: flex;
     }
 }

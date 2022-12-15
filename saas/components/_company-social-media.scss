@@ -1,7 +1,13 @@
 .company-social-media {
     text-align: center;
 
-    margin-top: 60px;
+    @media screen and (max-width:767px){
+        margin-top: 60px;
+    }
+
+    @media screen and (min-width:768px) {
+        margin-right: auto;
+    }
 }
 
 .company-social-media__text {

@@ -7,4 +7,17 @@
 
 .footer__container {
     @extend %container;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+}
+
+.footer__box{
+    @media screen and (min-width:768px){
+        margin-right: 165px;
+        margin-left: auto;
+    }
 }

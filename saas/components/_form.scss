@@ -121,13 +121,14 @@
 }
 
 .form__policy {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.7;
 
     color: $primary-text-color;
 }
 
 .form__policy-link {
+    font-size: inherit;
     color: $accent-color;
 }
 

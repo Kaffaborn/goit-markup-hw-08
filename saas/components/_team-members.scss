@@ -11,7 +11,13 @@
 }
 
 .team-members__list {
-    @extend %list
+    @extend %list;
+
+    @media screen and (min-width:768px){
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 }
 
 .team-members__item {
@@ -23,8 +29,14 @@
     border-radius: 0px 0px 4px 4px;
 
     &:not(:last-child) {
-            margin-bottom: 30px;
-         }
+        @media screen and (max-width:767px){
+             margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        width: calc((100% - 30px) / 2);
+    }
 }
 
 .team-members__name {

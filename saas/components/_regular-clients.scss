@@ -1,6 +1,6 @@
 .regular-clients {
     padding-top: 60px;
-    padding-bottom: 94px;
+    padding-bottom: 60px;
 }
 
 .regular-clients__title {
@@ -17,12 +17,18 @@
 }
 
 .regular-clients__item{
-   width: calc((100% - 30px) / 2);
+    @media screen and (max-width:767px){
+        width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width:768px) {
+        width: calc((100% - 60px) / 3);
+    }
 }
 
 .regular-clients__link {
     display: flex;
-    max-width: 210px;
+    width: auto;
     height: 92px;
     border: 1px solid $icon-main-color;
     border-radius: 4px;
