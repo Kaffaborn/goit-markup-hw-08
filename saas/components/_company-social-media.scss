@@ -1,12 +1,18 @@
 .company-social-media {
-    text-align: center;
-
     @media screen and (max-width:767px){
         margin-top: 60px;
     }
 
     @media screen and (min-width:768px) {
         margin-right: auto;
+    }
+
+    @media screen and (max-width:1199px){
+        text-align: center;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-left: auto;
     }
 }
 
@@ -18,6 +24,10 @@
     text-transform: uppercase;
 
     margin-bottom: 20px;
+
+    @media screen and (min-width:1200px) {
+        margin-top: 12px;
+    }
 }
 
 .company-social-media__list {

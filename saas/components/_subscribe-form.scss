@@ -1,13 +1,19 @@
 .subscribe-form {
-    text-align: center;
-
-    margin-top: 60px;
-
     @media screen and (min-width:768px) {
         margin-left: auto;
         margin-right: auto;
 
         min-width: 450px;
+    }
+
+    @media screen and (max-width:1199px) {
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        margin-right: 0;
     }
 }
 
@@ -24,6 +30,10 @@
     text-transform: uppercase;
     
     margin-bottom: 20px;
+
+    @media screen and (min-width:1200px) {
+        margin-top: 12px;
+    }
 }
 
 .subscribe-form__input {
@@ -36,7 +46,14 @@
 
     font: inherit;
 
-    max-width: 450px;
+    @media screen and (max-width:1199px){
+        max-width: 450px;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 358px;
+    }
+
     height: 50px;
 
  
@@ -60,9 +77,15 @@
     align-items: center;
     justify-content: center;
 
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    @media screen and (max-width:1199px) {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and (min-width:1199px) {
+        margin-top: 48px;
+        margin-left: 12px;
+    }
 
     width: 200px;
     height: 50px;
