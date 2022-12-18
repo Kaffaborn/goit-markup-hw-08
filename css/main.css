@@ -11,10 +11,29 @@
 }
 
 .container, .footer__container, .header__container {
-  max-width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (max-width: 479px) {
+  .container, .footer__container, .header__container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container, .footer__container, .header__container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container, .footer__container, .header__container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container, .footer__container, .header__container {
+    width: 1200px;
+  }
 }
 
 .regular-clients__title, .team-members__title, .what-we-do__title {
